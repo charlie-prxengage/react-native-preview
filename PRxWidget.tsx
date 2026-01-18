@@ -141,9 +141,13 @@ const PRxWidget: React.FC<PRxWidgetProps> = ({ widgetId, style }) => {
       </style>
     </head>
     <body>
-      <script type="application/json" data-prxengage-config>
-        { "widget_id": "${widgetId}" }
-      </script>
+      <script type="application/json" data-prxengage-config>{
+  "widget_id": "${widgetId}",
+  "consent_position": "above-condition",
+  "button_background_color": "#233b65",
+  "text_accent_color": "#120c0e",
+  "max_height_mode": "fill"
+}</script>
       <prxengage-widget></prxengage-widget>
       <script src="https://widget.prxengage.com/widget.js"></script>
     </body>
