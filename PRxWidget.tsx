@@ -146,7 +146,8 @@ const PRxWidget: React.FC<PRxWidgetProps> = ({ widgetId, style }) => {
   "consent_position": "above-condition",
   "button_background_color": "#233b65",
   "text_accent_color": "#120c0e",
-  "max_height_mode": "fill"
+  "max_height_mode": "fill",
+  "container_style": "none"
 }</script>
       <prxengage-widget></prxengage-widget>
       <script src="https://widget.prxengage.com/widget.js"></script>
